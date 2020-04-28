@@ -157,8 +157,6 @@ threadmain(int argc, char *argv[])
 		user = "none";
 	home = getenv("home");
 	if(home == nil)
-		home = getenv("HOME");
-	if(home == nil)
 		error("can't find $home");
 	if(mailboxdir == nil)
 		mailboxdir = estrstrdup(home, "/mail");
