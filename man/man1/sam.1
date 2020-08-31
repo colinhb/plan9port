@@ -500,7 +500,7 @@ Plan 9 command.
 .BI \*acd " directory
 Change working directory.
 If no directory is specified,
-.B $HOME
+.B $home
 is used.
 .PD
 .PP
@@ -878,22 +878,22 @@ terminates other than by a
 command (by hangup, deleting its window, etc.), modified
 files are saved in an
 executable file,
-.BR $HOME/sam.save .
+.BR $home/sam.save .
 This program, when executed, asks whether to write
 each file back to a external file.
 The answer
 .L y
 causes writing; anything else skips the file.
 .SH FILES
-.TF $HOME/sam.save
+.TF $home/sam.save
 .TP
-.B $HOME/sam.save
+.B $home/sam.save
 .TP
-.B $HOME/sam.err
+.B $home/sam.err
 .TP
 .B \*9/bin/samsave
 the program called to unpack
-.BR $HOME/sam.save .
+.BR $home/sam.save .
 .SH SOURCE
 .TF \*9/src/cmd/samterm
 .TP
