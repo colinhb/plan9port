@@ -532,7 +532,7 @@ xattach(Client *client, char *label, char *winsize)
 
 		display_resources = XResourceManagerString(_x.display);
 		if(display_resources == nil){
-			home = getenv("HOME");
+			home = getenv("HOME");  # here we care about UNIX host system HOME, not plan9 home
 			if(home!=nil && (file=smprint("%s/.Xdefaults", home)) != nil){
 				XrmCombineFileDatabase(file, &database, False);
 				free(file);
