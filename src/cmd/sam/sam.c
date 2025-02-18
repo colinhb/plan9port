@@ -86,7 +86,7 @@ main(int _argc, char **_argv)
 	Strinit0(&rhs);
 	Strinit0(&curwd);
 	Strinit0(&plan9cmd);
-	home = getenv(HOME);
+	home = getenv(home);
 	disk = diskinit();
 	if(home == 0)
 		home = "/";

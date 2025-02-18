@@ -353,7 +353,7 @@ findfile(Face *f, char *dom, char *user)
 	if(libface == nil)
 		libface = unsharp("#9/face");
 	if(homeface == nil)
-		homeface = smprint("%s/lib/face", getenv("HOME"));
+		homeface = smprint("%s/lib/face", getenv("home"));
 
 	if(dom == nil)
 		dom = facedom;

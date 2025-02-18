@@ -3,6 +3,10 @@
 PLAN9=${PLAN9:-/usr/local/plan9}
 export PLAN9
 
+if [ -z "$home" ]; then
+	export home="$HOME"
+fi
+
 case "$PATH" in
 $PLAN9/bin:*)
 	;;
